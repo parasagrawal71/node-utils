@@ -1,0 +1,1 @@
+Module to export the shared code among the node apps
