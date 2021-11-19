@@ -1,23 +1,35 @@
 {
-  "name": "@parasagrawal71/node-utils",
-  "version": "1.0.0",
-  "description": "Module to export the shared code among the node apps",
-  "author": "Paras Agrawal",
-  "license": "ISC",
-  "private": false,
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "rimraf dist && NODE_ENV=production babel lib --out-dir dist --copy-files",
-    "deploy": "npm run build && npm publish --access public"
-  },
-  "devDependencies": {
-    "@babel/cli": "7.16.0",
-    "@babel/core": "7.16.0",
-    "@babel/preset-env": "7.16.0",
-    "rimraf": "3.0.2"
-  }
+    "name": "@parasagrawal71/paras-utils",
+    "version": "1.0.25",
+    "description": "Module to export the shared code among the node apps",
+    "author": "Paras Agrawal",
+    "license": "ISC",
+    "private": false,
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rimraf dist && NODE_ENV=production babel lib --out-dir dist --copy-files",
+        "deploy": "npm install && npm run build && npm publish --access public"
+    },
+    "dependencies": {
+        "@sendgrid/mail": "7.6.0",
+        "chalk": "4.1.2",
+        "cls-hooked": "4.2.2",
+        "cls-rtracer": "1.4.1",
+        "http-status": "1.5.0",
+        "lodash": "4.17.21",
+        "mongoose": "5.7.7",
+        "util": "0.12.4",
+        "winston": "3.3.3",
+        "winston-daily-rotate-file": "4.5.5"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.16.0",
+        "@babel/core": "7.16.0",
+        "@babel/preset-env": "7.16.0",
+        "rimraf": "3.0.2"
+    }
 }
